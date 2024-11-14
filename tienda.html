@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Catalogo - Horizonte Verde</title>
+    <link rel="stylesheet" href="./css/styletienda.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-content">
+            <a href="/" class="logo">
+                <span class="logo-icon">🌱</span>
+                <span class="logo-text">Horizonte Verde</span>
+            </a>
+            <form class="search-form">
+                <input type="buscar" placeholder="Buscar" class="buscar-input">
+                <button type="submit" class="buscar-button">Buscar</button>
+            </form>
+
+<!--Carrito-->
+<div class="cart-bar">
+    <div class="cart-items">
+        <button class="icon-button favorite-button" aria-label="Favoritos">
+            <svg class="heart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+        </button>
+        <div class="cart-wrapper">
+            <button class="icon-button cart-button" aria-label="Carrito de compra">
+                <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+                <span class="cart-text">Carrito de compras</span>
+            </button>
+            <span class="cart-price">$0</span>
+        </div>
+    </div>
+</div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./tienda.html">Tienda</a></li>
+                <li><a href="/sobrenosotros.html">Sobre Nosotros</a></li>
+                <li><a href="/contactanos">Contactanos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+<!-- Tienda Catalogo -->
+ 
+<section class="Catalogo-container"></section>
+
+<div class="container">
+    <div class="catalog-layout">
+        <!-- Sidebar filters -->
+        <div class="sidebar">
+            <div class="filter-section">
+                <button class="filter-button">
+                    <span>Filtros</span>
+                    <svg class="filter-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"></path></svg>
+                </button>
+
+                <div class="filter-group">
+                    <h3>Todas las categorías</h3>
+                    <ul class="category-list">
+                        <li><span>Vegetales</span> <span>(150)</span></li>
+                        <li><span>Paneles Solares</span> <span>(54)</span></li>
+                        <li><span>Baterias</span> <span>(47)</span></li>
+                    </ul>
+                </div>
+
+                <div class="filter-group">
+                    <h3>Precio</h3>
+                    <div class="price-range">
+                        <input type="range" min="0" max="1500" value="0" class="price-slider">
+                        <div class="price-values">
+                            <span>$0</span>
+                            <span>$1500</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <h3>Rating</h3>
+                    <div class="rating-options">
+                        <label><input type="checkbox" checked> <span class="stars">★★★★★</span> 5.0</label>
+                        <label><input type="checkbox" checked> <span class="stars">★★★★☆</span> 4.0</label>
+                        <label><input type="checkbox"> <span class="stars">★★★☆☆</span> 3.0</label>
+                        <label><input type="checkbox"> <span class="stars">★★☆☆☆</span> 2.0</label>
+                        <label><input type="checkbox"> <span class="stars">★☆☆☆☆</span> 1.0</label>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <h3>Tag's Populares</h3>
+                    <div class="tags">
+                        <span class="tag">Saludable</span>
+                        <span class="tag">Energía</span>
+                        <span class="tag">Vegetales</span>
+                        <span class="tag">Frutas</span>
+                        <span class="tag">Compostables</span>
+                        <span class="tag">Ecofriendly</span>
+                        <span class="tag">Snacks</span>
+                        <span class="tag">Titan</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Productos busqueda -->
+        <div class="product-grid">
+            <div class="product-header">
+                <span>52 Resultados encontrados</span>
+                <select>
+                    <option>Ultimo</option>
+                    <option>Precio: Menor a Mayor</option>
+                    <option>Precio: Mayor a Menor</option>
+                </select>
+            </div>
+
+            <div class="product-list">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/imagenesHZ/BananoHZ.png" alt="">
+                        <button class="favorite-button">♡</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Bananos</h3>
+                        <div class="product-rating">★★★★☆</div>
+                        <div class="product-price-cart">
+                            <span class="price">$4.450</span>
+                            <button class="add-to-cart">🛒</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/imagenesHZ/CebollasHZ.png" alt="">
+                        <span class="product-badge featured">Popular</span>
+                        <button class="favorite-button">♡</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Cebollas</h3>
+                        <div class="product-rating">★★★★★</div>
+                        <div class="product-price-cart">
+                            <span class="price">$6.000</span>
+                            <button class="add-to-cart">🛒</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/imagenesHZ/TomateHZ.png" alt="Ladies Finger">
+                        <span class="product-badge out-of-stock">Sin Stock</span>
+                        <button class="favorite-button">♡</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Tomate</h3>
+                        <div class="product-rating">★★★★☆</div>
+                        <div class="product-price-cart">
+                            <span class="price">$2.500</span>
+                            <button class="add-to-cart" disabled>🛒</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/imagenesHZ/NaranjasHZ.png" alt="Eggplant">
+                        <button class="favorite-button">♡</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Naranjas</h3>
+                        <div class="product-rating">★★★★☆</div>
+                        <div class="product-price-cart">
+                            <span class="price">$4.999</span>
+                            <button class="add-to-cart">🛒</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/imagenesHZ/LechugaHZ.png" alt="Fresh Cauliflower">
+                        <button class="favorite-button">♡</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Lechuga</h3>
+                        <div class="product-rating">★★★★☆</div>
+                        <div class="product-price-cart">
+                            <span class="price">$7.000</span>
+                            <button class="add-to-cart">🛒</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/imagenesHZ/ManzanaVerdeHZ.png" alt="Green Apple">
+                        <button class="favorite-button">♡</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Manzanas Verdes</h3>
+                        <div class="product-rating">★★★★★</div>
+                        <div class="product-price-cart">
+                            <span class="price">$13.999</span>
+                            <button class="add-to-cart">🛒</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/imagenesHZ/papasHZ.png" alt="Green Capsicum">
+                        <button class="favorite-button">♡</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Papa Capira</h3>
+                        <div class="product-rating">★★★★☆</div>
+                        <div class="product-price-cart">
+                            <span class="price">$14.99</span>
+                            <button class="add-to-cart">🛒</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/imagenesHZ/papacriollaHZ.png" alt="Green Chili">
+                        <button class="favorite-button">♡</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Papa Criolla</h3>
+                        <div class="product-rating">★★★★☆</div>
+                        <div class="product-price-cart">
+                            <span class="price">$14.99</span>
+                            <button class="add-to-cart">🛒</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/imagenesHZ/lecheHZ.png" alt="Green Cucumber">
+                        <span class="product-badge sale"> 50%</span>
+                        <button class="favorite-button">♡</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Leche L</h3>
+                        <div class="product-rating">★★★★☆</div>
+                        <div class="product-price-cart">
+                            <span class="price">$2.100</span>
+                            <button class="add-to-cart">🛒</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+                <button>5</button>
+                <span>...</span>
+                <button>10</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--Marcas-->
+<section class="logos-section">
+
+<div class="client-logos">
+    <img src="/imageneslogo/ServiHZ.png" alt="Steps Logo" class="client-logo">
+    <img src="/imageneslogo/exitoHZ.png" alt="Mango Logo" class="client-logo">
+    <img src="/imageneslogo/JumboHZ.png" alt="Food Logo" class="client-logo">
+    <img src="/imageneslogo/MayoristaHZ.png" alt="Food Series Logo" class="client-logo">
+    <img src="/imageneslogo/CanadianSolarHZ.png" alt="Book Off Logo" class="client-logo">
+    <img src="/imageneslogo/MakainaHZ.png" alt="G Series Logo" class="client-logo">
+</div>
+
+</section>
+
+<script src="/js/tienda.js"></script>
+
+</body>
+</html>

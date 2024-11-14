@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eccomerce - Productos Sostenibles</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <a href="/" class="logo">
+                <span class="logo-icon">🌱</span>
+                <span class="logo-text">Horizonte Verde</span>
+            </a>
+            <form class="search-form">
+                <input type="buscar" placeholder="Buscar" class="buscar-input">
+                <button type="submit" class="buscar-button">Buscar</button>
+            </form>
+
+<!--Carrito-->
+<div class="cart-bar">
+    <div class="cart-items">
+        <button class="icon-button favorite-button" aria-label="Favoritos">
+            <svg class="heart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+        </button>
+        <div class="cart-wrapper">
+            <button class="icon-button cart-button" aria-label="Carrito de compra">
+                <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+                <span class="cart-text">Carrito de compras</span>
+            </button>
+            <span class="cart-price">$0</span>
+        </div>
+    </div>
+</div>
+    </header>
+
+<!--Carrito Boton Vaciar-->
+
+<!-- Fin carrito-->
+    <nav>
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="./tienda.html">Tienda</a></li>
+                <li><a href="./sobrenosotros.html">Sobre Nosotros</a></li>
+                <li><a href="/contactanos">Contactanos</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="container main-content">
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>Haz parte de un mejor futuro, <span class="highlight-text">sé sostenible</span></h1>
+                    <div class="hero-promo">
+                        <span>Descuentos de</span>
+                        <span class="discount-badge">30% OFF</span>
+                    </div>
+
+                    <p class="hero-subtitle">+ Domicilio gratis</p>
+                    <a href="#" class="cta-button">Descubre →</a>
+                </div>
+            </section>
+            <aside class="side-banners">
+                <div class="banner banner-offer">
+                    <h2>PRODUCTOS LOCALES</h2>
+                    <p class="banner-title">EN OFERTA</p>
+                    <p class="banner-subtitle">Solo frutas y verduras</p>
+                    <a href="#" class="banner-button">Aprovecha ahora</a>
+                </div>
+                <div class="banner banner-special">
+                    <p class="banner-label">LO MEJOR DE NOSOTROS</p>
+                    <h2>Productos especiales de nuestra tierra</h2>
+                    <a href="#" class="banner-button">Enterate →</a>
+                </div>
+            </aside>
+        </div>
+        <section class="features">
+            <div class="container">
+                <div class="feature">
+                    <span class="feature-icon">🚚</span>
+                    <div class="feature-content">
+                        <h3>Envios rapidos</h3>
+                        <p>A la puerta de tu casa</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">🎧</span>
+                    <div class="feature-content">
+                        <h3>Soporte 24/7</h3>
+                        <p>Contactanos</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">🔒</span>
+                    <div class="feature-content">
+                        <h3>Pagos seguros</h3>
+                        <p>Proteccion ante nuestros clientes</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">📦</span>
+                    <div class="feature-content">
+                        <h3>Garantia</h3>
+                        <p>Productos seleccionados</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!--Productos Populares-->  
+
+        <section class="popular-products container">
+            <h2 class="section-title">Productos populares, apoya a nuestros emprendedores</h2>
+            <div class="products-grid">
+                <article class="product-card">
+                    <img src="imagenesHZ/BananoHZ.png" alt="Manzanas verdes" class="product-image">
+                    <div class="product-info">
+                        <h3>Bananos</h3>
+                        <div class="price-container">
+                            <span class="current-price">$4.450</span>
+                            <span class="original-price">$5.999</span>
+                        </div>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                        </div>
+                        <button class="add-to-cart">🛒
+                        </button>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <img src="imagenesHZ/LechugaHZ.png" alt="Naranjas" class="product-image">
+                    <div class="product-info">
+                        <h3>Lechuga</h3>
+                        <div class="price-container">
+                            <span class="current-price">$7.000</span>
+                            <span class="original-price">$8.999</span>
+                        </div>
+                        <div class="rating">
+                            <span class="stars">★★★★☆</span>
+                        </div>
+                        <button class="add-to-cart">🛒</button>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <img src="imagenesHZ/ManzanaVerdeHZ.png" alt="Lechuga" class="product-image">
+                    <div class="product-info">
+                        <h3>Manzanas Verdes</h3>
+                        <div class="price-container">
+                            <span class="current-price">$13.999</span>
+                            <span class="original-price">$15.999</span>
+                        </div>
+                        <div class="rating">
+                            <span class="stars">★★★★☆</span>
+                        </div>
+                        <button class="add-to-cart">🛒</button>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <img src="imagenesHZ/NaranjasHZ.png" alt="Lechuga" class="product-image">
+                    <div class="product-info">
+                        <h3>Naranjas</h3>
+                        <div class="price-container">
+                            <span class="current-price">$3.999</span>
+                            <span class="original-price">$5.999</span>
+                        </div>
+                        <div class="rating">
+                            <span class="stars">★★★★☆</span>
+                        </div>
+                        <button class="add-to-cart">🛒</button>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <img src="imagenesHZ/TomateHZ.png" alt="Berenjena" class="product-image">
+                    <div class="product-info">
+                        <h3>Tomate de Aliño</h3>
+                        <div class="price-container">
+                            <span class="current-price">$2.500</span>
+                        </div>
+                        <div class="rating">
+                            <span class="stars">★★★★☆</span>
+                        </div>
+                        <button class="add-to-cart">🛒</button>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <img src="imagenesHZ/CebollasHZ.png" alt="Berenjena" class="product-image">
+                    <div class="product-info">
+                        <h3>Cebolla cabezona</h3>
+                        <div class="price-container">
+                            <span class="current-price">$6.000</span>
+                        </div>
+                        <div class="rating">
+                            <span class="stars">★★★★☆</span>
+                        </div>
+                        <button class="add-to-cart">🛒</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+        
+        <section class="sustainability-banner">
+            <div class="banner-content">
+                <h2>SÉ <span class="highlight-second">SOSTENIBLE</span></h2>
+                <p>Juntos por un mañana <span class="highlight">verde</span></p>
+                <a href="#" class="cta-button">Unete al cambio →</a>
+            </div>
+        </section>
+
+<!-- Seccion de energias Renovables --> 
+
+        <section class="popular-products container">
+    <h2 class="section-title">Energias Renovables, Descubre el mundo que te rodea</h2>
+    <div class="products-grid">
+        <article class="product-card">
+            <img src="imagenesHZ/PanelSolar 100W.png" alt="" class="product-image">
+            <div class="product-info">
+                <h3>Panel Solar 100W</h3>
+                <div class="price-container">
+                    <span class="current-price">$240.000</span>
+                    <span class="original-price">$299.000</span>
+                </div>
+                <div class="rating">
+                    <span class="stars">★★★★☆</span>
+                </div>
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </article>
+        <article class="product-card">
+            <img src="imagenesHZ/PanelSolar 425W.png" alt="" class="product-image">
+            <div class="product-info">
+                <h3>Panel Solar 425W</h3>
+                <div class="price-container">
+                    <span class="current-price">$449.000</span>
+                    <span class="original-price">$599.000</span>
+                </div>
+                <div class="rating">
+                    <span class="stars">★★★★☆</span>
+                </div>
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </article>
+        <article class="product-card">
+            <img src="imagenesHZ/PanelSolar 550W.png" alt="" class="product-image">
+            <div class="product-info">
+                <h3>Panel Solar 550W</h3>
+                <div class="price-container">
+                    <span class="current-price">$399.000</span>
+                    <span class="original-price">$499.000</span>
+                </div>
+                <div class="rating">
+                    <span class="stars">★★★★★</span>
+                </div>
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </article>
+        <article class="product-card">
+            <img src="imagenesHZ/PanelSolar 690W.png" alt="" class="product-image">
+            <div class="product-info">
+                <h3>Panel Solar 690W</h3>
+                <div class="price-container">
+                    <span class="current-price">$590.000</span>
+                </div>
+                <div class="rating">
+                    <span class="stars">★★★★☆</span>
+                </div>
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </article>
+        <article class="product-card">
+            <img src="imagenesHZ/PanelSolar 670W.png" alt="" class="product-image">
+            <div class="product-info">
+                <h3>Panel Solar 670W</h3>
+                <div class="price-container">
+                    <span class="current-price">$799.000</span>
+                    <span class="original-price">$999.000</span>
+                </div>
+                <div class="rating">
+                    <span class="stars">★★★★★</span>
+                </div>
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </article>
+        <article class="product-card">
+            <img src="imagenesHZ/Inversor 1000W 12V.png" alt="" class="product-image">
+            <div class="product-info">
+                <h3>Inversor 1000W 12V</h3>
+                <div class="price-container">
+                    <span class="current-price">$350.000</span>
+                    <span class="original-price">$399.000</span>
+                </div>
+                <div class="rating">
+                    <span class="stars">★★★★☆</span>
+                </div>
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </article>
+        <article class="product-card">
+            <img src="imagenesHZ/Inversor 3000W 24V.png" alt="" class="product-image">
+            <div class="product-info">
+                <h3>Inversor 3000W 24V</h3>
+                <div class="price-container">
+                    <span class="current-price">$2.150.000</span>
+                </div>
+                <div class="rating">
+                    <span class="stars">★★★★☆</span>
+                </div>
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </article>
+        <article class="product-card">
+            <img src="imagenesHZ/Inversor Solar 3000W 24V.png" alt="" class="product-image">
+            <div class="product-info">
+                <h3>Inversor Solar 3000W 24V</h3>
+                <div class="price-container">
+                    <span class="current-price">$1.950.000</span>
+                </div>
+                <div class="rating">
+                    <span class="stars">★★★★☆</span>
+                </div>
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </article>
+        <article class="product-card">
+            <img src="imagenesHZ/Inversor Solar 3000W 48V.png" alt="" class="product-image">
+            <div class="product-info">
+                <h3>Inversor Solar 3000W 48V</h3>
+                <div class="price-container">
+                    <span class="current-price">$2.500.000</span>
+                </div>
+                <div class="rating">
+                    <span class="stars">★★★★☆</span>
+                </div>
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </article>
+        <article class="product-card">
+            <img src="imagenesHZ/Inversr 8000W 240V.png" alt="" class="product-image">
+            <div class="product-info">
+                <h3>Inversor Solar 8000W 240V</h3>
+                <div class="price-container">
+                    <span class="current-price">$9.900.000</span>
+                </div>
+                <div class="rating">
+                    <span class="stars">★★★★☆</span>
+                </div>
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </article>
+    </div>
+</section>
+
+<!-- Seccion de Articulos -->
+
+<section class="blog-section">
+    <h1>Blog, Noticias y Recetas</h1>
+
+    <div class="blog-grid">
+        <!-- Card 1 -->
+        <article class="blog-card">
+            <div class="card-image">
+                <img src="imagenesHZ/Noticia1.png" alt="">
+                <div class="date-badge">
+                    <span class="day">04</span>
+                    <span class="month">NOV</span>
+                </div>
+            </div>
+            <div class="card-content">
+                <div class="metadata">
+                    <span class="tag">🏷️Tag</span>
+                    <span class="by">By</span>
+                    <span class="comments">125 Comentarios</span>
+                </div>
+                <h2>Tormentas extremas en España</h2>
+                <a href="#" class="read-more">Leer más <span class="arrow">→</span></a>
+            </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="blog-card">
+            <div class="card-image">
+                <img src="imagenesHZ/Noticia2.png" alt="">
+                <div class="date-badge">
+                    <span class="day">02</span>
+                    <span class="month">NOV</span>
+                </div>
+            </div>
+            <div class="card-content">
+                <div class="metadata">
+                    <span class="tag">🏷️Tag</span>
+                    <span class="by">By</span>
+                    <span class="comments">40 Comentarios</span>
+                </div>
+                <h2>Así avanza Latinoamérica hacia una transición energética sostenible y tecnológica</h2>
+                <a href="#" class="read-more">Leer más <span class="arrow">→</span></a>
+            </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="blog-card">
+            <div class="card-image">
+                <img src="imagenesHZ/Noticia3.png" alt="">
+                <div class="date-badge">
+                    <span class="day">03</span>
+                    <span class="month">NOV</span>
+                </div>
+            </div>
+            <div class="card-content">
+                <div class="metadata">
+                    <span class="tag">🏷️Tag</span>
+                    <span class="by">By</span>
+                    <span class="comments">102 Comentarios</span>
+                </div>
+                <h2>Bizcocho con manzanas y yogur</h2>
+                <a href="#" class="read-more">Leer más <span class="arrow">→</span></a>
+            </div>
+        </article>
+    </div>
+</section>
+
+<!-- Seccion de Feedback -->
+
+<section class="testimonials">
+    <div class="testimonials-header">
+        <h2>Testimonios y comentarios de nuestros clientes</h2>
+        <div class="navigation-buttons">
+            <button class="nav-btn prev" aria-label="Testimonio anterior">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </button>
+            <button class="nav-btn next" aria-label="Siguiente testimonio">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+        </div>
+    </div>
+    
+    <div class="testimonials-container">
+        <div class="testimonial-card">
+            <div class="quote-mark" aria-hidden="true">"</div>
+            <p class="testimonial-text">¡Increíble experiencia! Compré varios 
+                                        productos orgánicos y un panel solar 
+                                        para mi casa. Todo llegó en perfectas 
+                                        condiciones y la calidad superó mis 
+                                        expectativas. 
+                                        ¡Definitivamente recomiendo esta tienda!"</p>
+            <div class="testimonial-footer">
+                <div class="client-info">
+                    <img src="imagenesHZ/Petro.jpg" alt="" class="client-image">
+                    <div class="client-details">
+                        <h3>Presidente Petro</h3>
+                        <span class="client-type">Cliente</span>
+                    </div>
+                </div>
+                <div class="rating" aria-label="Calificación: 5 de 5 estrellas">
+                    <span aria-hidden="true">★★★★★</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="quote-mark" aria-hidden="true">"</div>
+            <p class="testimonial-text">Satisfecho con la compra. 
+                                        Productos frescos y precios 
+                                        competitivos.</p>
+            <div class="testimonial-footer">
+                <div class="client-info">
+                    <img src="imagenesHZ/Patricio.jpg" alt="" class="client-image">
+                    <div class="client-details">
+                        <h3>Don Patricio</h3>
+                        <span class="client-type">Customer</span>
+                    </div>
+                </div>
+                <div class="rating" aria-label="Calificación: 5 de 5 estrellas">
+                    <span aria-hidden="true">★★★★★</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="quote-mark" aria-hidden="true">"</div>
+            <p class="testimonial-text">Gracias a esta página, pude vender 
+                                        mis productos orgánicos directamente 
+                                        a más clientes. La plataforma es fácil 
+                                        de usar y me ha ayudado mucho. 
+                                        ¡Muy recomendable para otros agricultores!</p>
+            <div class="testimonial-footer">
+                <div class="client-info">
+                    <img src="imagenesHZ/Jaime.jpeg" alt="" class="client-image">
+                    <div class="client-details">
+                        <h3>Jaime Isaza</h3>
+                        <span class="client-type">Customer</span>
+                    </div>
+                </div>
+                <div class="rating" aria-label="Calificación: 5 de 5 estrellas">
+                    <span aria-hidden="true">★★★★★</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección de Suscripción -->
+<section class="subscribe">
+    <div class="subscribe-content">
+        <h2>Subcríbete a nuestra web</h2>
+        <p>Forma parte del cambio</p>
+        <form class="subscribe-form" action="#" method="post">
+            <label for="email" class="sr-only">Tu correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="Tu correo electronico" class="email-input" required>
+            <button type="submit" class="subscribe-btn">Suscríbete</button>
+        </form>
+        <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Pinterest">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+        </div>
+    </div>
+</section>
+
+    </main>
+<!--Boton Vaciar Carrito-->
+
+<div id="cart-modal" class="cart-modal">
+    <div class="cart-modal-content">
+        <div class="cart-modal-header">
+            <h2>Tu Carrito</h2>
+            <button class="close-modal">&times;</button>
+        </div>
+        <div class="cart-modal-body">
+            <div class="cart-items-list"></div>
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="modal-total-price">$0</span>
+            </div>
+        </div>
+        <div class="cart-modal-footer">
+            <button class="empty-cart">Vaciar Carrito</button>
+            <button class="checkout-btn">Proceder al Pago</button>
+        </div>
+    </div>
+</div>
+
+<!--Marcas-->
+
+<section class="logos-section">
+    
+    <div class="client-logos">
+      <img src="/imageneslogo/ServiHZ.png" alt="Steps Logo" class="client-logo">
+      <img src="/imageneslogo/exitoHZ.png" alt="Mango Logo" class="client-logo">
+      <img src="/imageneslogo/JumboHZ.png" alt="Food Logo" class="client-logo">
+      <img src="/imageneslogo/MayoristaHZ.png" alt="Food Series Logo" class="client-logo">
+      <img src="/imageneslogo/CanadianSolarHZ.png" alt="Book Off Logo" class="client-logo">
+      <img src="/imageneslogo/MakainaHZ.png" alt="G Series Logo" class="client-logo">
+    </div>
+
+</section>
+
+
+    <script src="./js/cart.js"></script>
+</body>
+</html>
